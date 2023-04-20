@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/cocinaYA.png";
+import projImg2 from "../assets/img/calculadora.png";
+import projImg3 from "../assets/img/amazing.png";
+import projImg4 from "../assets/img/petshop.png";
+import projImg5 from "../assets/img/minga.png";
+import projImg6 from "../assets/img/lance.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,57 +14,63 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "CocináYA",
+      description: "Landing page sobre una academia de cocina",
       imgUrl: projImg1,
+      linkUrl: "https://nicojuarez95.github.io/CocinaYA-/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Calculadora",
+      description: "Proyecto hecho con HTML,CSS y JS",
       imgUrl: projImg2,
+      linkUrl: "https://nicojuarez95.github.io/CALCULADORA/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Amazing Events",
+      description: "Pagina simple de varias secciones, donde se aprecia el uso Javascript y manejo de APIs",
       imgUrl: projImg3,
+      linkUrl: "https://nicojuarez95.github.io/amazing-events/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "PetShop",
+      description: "Pagina web destinada a un petshop, carrito de compras hecho con javascript y manejos de APIs",
+      imgUrl: projImg4,
+      linkUrl: "https://nicojuarez95.github.io/PETSHOP/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "Minga",
+      description: "App creada para leer y publicar Mangas",
+      imgUrl: projImg5,
+      linkUrl: "https://minga-host-2.vercel.app/"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      title: "Lance",
+      description: "Proyecto final Fullstack de MindHub",
+      imgUrl: projImg6,
+      linkUrl: "https://lance-app.vercel.app/"
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projectos">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>Projectos</h2>
+                <p className="proyectotexto">Como programador, he tenido la oportunidad de trabajar en una variedad de proyectos tanto individual como grupalmente, desde aplicaciones web hasta moviles. A continuación, se presentan los proyectos más destacados en los que he trabajado:</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first" className="tab">Tab 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second" className="tab">Tab 2</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third" className="tab">Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -80,10 +89,10 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Proximamente..</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Proximamente..</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

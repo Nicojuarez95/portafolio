@@ -34,6 +34,7 @@ body {
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,6 +74,9 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
+.tab{
+  cursor: pointer;
+}
 
 p.success {
 	color: green;
@@ -83,7 +87,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 .logo {
-  width: 180px;
+  width: 160px;
 }
 nav.navbar {
   padding: 18px 0;
@@ -342,6 +346,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+@media (min-width: 320px) and (max-width: 767px) {
+ .skilltexto{
+  margin: 0 !important;
+  min-width: 300px !important;
+  padding: 10px !important;
+ } 
+ .skill-bx{
+  padding: 5px !important;
+  margin: 0 !important;
+ }
+}
 
 /************ Projects Css ************/
 .project {
@@ -349,6 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   background-color: black;
 }
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -421,6 +437,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 300px;
+}
+.proj-imgbx img {
+  height: 100%;
+  object-fit: cover;
 }
 .proj-imgbx::before {
   content: "";
@@ -459,6 +480,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+  color: white;
+}
+.proj-txtx h4 {
+  color: white;
 }
 .background-image-right {
   top: 20%;
@@ -467,6 +492,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .proyectotexto{
+    margin: 0 !important;
+    width: 300px !important;
+    padding: 10px;
+  }
 }
 
 /************ Projects Css ************/
@@ -543,11 +575,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
+  height: 20vh;
+}
+#logoF{
+  width: 300px;
 }
 .newsletter-bx {
   background: #FFFFFF;

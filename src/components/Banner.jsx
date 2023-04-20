@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Fullstack MERN", "Diseñador web" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <span className="tagline">Bienvenid@ a mi portafolio</span>
+                <h1>{`Hola! Soy Nico!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Fullstack MERN", "Diseñador web"]'><span className="wrap">{text}</span></span></h1>
+                  <p>Como programador, busco constantemente mejorar mis habilidades y aprender nuevas tecnologías. Me apasiona enfrentar nuevos desafíos y resolver problemas de manera eficiente. Me gusta trabajar en equipo y compartir conocimientos con otros desarrolladores. Mi objetivo es crear soluciones innovadoras y útiles para mis clientes y usuarios finales, siempre manteniendo altos estándares de calidad y atención al detalle.</p>
+                  <button onClick={() => console.log('connect')}>Conectémonos <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
