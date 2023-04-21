@@ -21,6 +21,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  width: 6px;
+  background-color: #111;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #111;
+}
 
 html {
   scroll-behavior: smooth;
@@ -99,7 +112,7 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #121212;
+  background-color: #121212fa;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
@@ -241,10 +254,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background: rgba(0,0,0,0.4) url('./assets/img/fondo.npg.webp');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
+  background-blend-mode: darken;
 }
 .banner .tagline {
   font-weight: 700;
@@ -505,6 +520,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
+  height: 95vh;
 }
 .contact img {
   width: 92%;
