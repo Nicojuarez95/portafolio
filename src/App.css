@@ -545,7 +545,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .contact{
-    height: 1000px;
+    height: 1110px;
   }
 }
 .contact form input, .contact form textarea {
