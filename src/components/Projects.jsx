@@ -60,7 +60,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projectos</h2>
-                <p className="proyectotexto">Como programador, he tenido la oportunidad de trabajar en una variedad de proyectos tanto individual como grupalmente, desde aplicaciones web hasta moviles. A continuación, se presentan los proyectos más destacados en los que he trabajado:</p>
+                <p id="proyectotexto">Como programador, he tenido la oportunidad de trabajar en una variedad de proyectos tanto individual como grupalmente, desde aplicaciones web hasta moviles. A continuación, se presentan los proyectos más destacados en los que he trabajado:</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

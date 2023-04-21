@@ -48,6 +48,7 @@ body {
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -326,6 +327,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  height: 75vh;
 }
 .skill-bx {
   background: #151515;
@@ -371,7 +373,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 5px !important;
   margin: 0 !important;
  }
+ .skill {
+  margin-top: 550px;
+  }
+  .project{
+    margin-top: 150px;
+  }
 }
+@media (min-width: 768px) and (max-width: 1224px) {
+   .banner{
+    margin-bottom: 300px;
+   }
+ }
+ 
 
 /************ Projects Css ************/
 .project {
@@ -509,10 +523,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .proyectotexto{
-    margin: 0 !important;
-    width: 300px !important;
-    padding: 10px;
+  #proyectotexto{
+    min-width: 320px !important;
+    
   }
 }
 
@@ -529,6 +542,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .contact{
+    height: 1000px;
+  }
 }
 .contact form input, .contact form textarea {
   width: 100%;
