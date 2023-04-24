@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 .textoTitle{
-  height: 250px;
+  height: 130px;
 }
 /************ Default Css ************/
 * {
@@ -326,6 +326,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -380,6 +381,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .project{
     margin-top: 150px;
+  }
+  .textoTitle{
+    height: 250px;
   }
 }
 @media (min-width: 768px) and (max-width: 1224px) {
@@ -472,7 +476,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx img {
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .proj-imgbx::before {
   content: "";
