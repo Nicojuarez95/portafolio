@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Bienvenid@ a mi portafolio</span>
                 <h1 className="textoTitle">{`Hola! Soy Nico!`} <span className="txt-rotate" dataPeriod="1500" data-rotate='[ "Fullstack MERN", "Diseñador web"]'><span className="wrap">{text}</span></span></h1>
                   <p className="parrafo">Como programador, busco constantemente mejorar mis habilidades y aprender nuevas tecnologías. Me apasiona enfrentar nuevos desafíos y resolver problemas de manera eficiente. Me gusta trabajar en equipo y compartir conocimientos con otros desarrolladores. Mi objetivo es crear soluciones innovadoras y útiles para mis clientes y usuarios finales, siempre manteniendo altos estándares de calidad y atención al detalle.</p>
-                  <button onClick={() => console.log('connect')}>Descargar CV<ArrowRightCircle size={25} /></button>
+                  <a className="anchord" href="https://www.mediafire.com/file/fucyonevccy3gah/Nicolas_Juarez_DesarrolladorWeb.pdf/file" target="_blank"><button>Descargar CV<ArrowRightCircle size={25} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>
